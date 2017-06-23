@@ -1,4 +1,13 @@
+// Import global color variables
 @import "_partials/colors";
+// Import libraries
 @import "bootstrap/bootstrap";
 
+body {
+	// Offset for the fixed navigation on all pages
+	margin-top: $navbar-height;
+}
+
+// Import app specific styles
 @import "_partials/navbar";
+@import "_partials/footer"
