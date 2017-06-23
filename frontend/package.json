@@ -1,0 +1,32 @@
+{
+  "name": "frontend-project-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup-bootstrap": "npm install --save bootstrap@4.0.0-alpha.6 && npm install --save jquery && gulp copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glitchedmob/frontend-project-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glitchedmob/frontend-project-starter/issues"
+  },
+  "homepage": "https://github.com/glitchedmob/frontend-project-starter#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.1.6",
+    "typescript": "^2.3.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1"
+  }
+}
