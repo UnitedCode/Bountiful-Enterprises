@@ -7735,3 +7735,24 @@ button.close {
     display: none !important;
   }
 }
+
+.navbar .dropdown-menu {
+  background-color: #1F3A93;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.navbar .dropdown-menu > li > a {
+  color: #FFF;
+}
+
+.navbar .dropdown-menu > li > a:hover, .navbar .dropdown-menu > li > a:focus {
+  color: #FFF;
+  background-color: #38539B;
+}
+
+.navbar .dropdown-menu > .active > a, .navbar .dropdown-menu > .active > a:hover, .navbar .dropdown-menu > .active > a:focus {
+  color: #FFF;
+  background-color: #38539B;
+}

@@ -2,7 +2,6 @@ var gulp = require("gulp");
 var sass = require("gulp-sass");
 var pug = require("gulp-pug");
 var ts = require("gulp-typescript");
-var browserify = require("browserify");
 var browserSync = require("browser-sync").create();
 
 paths = {

@@ -1,3 +1,8 @@
+//- Use this mixin to inlude the navbar in your page.
+//- This mixin takes a string with the name of the active page
+//- Example +navbar("Home") would include the navbar with the 
+//- home page set as active
+
 -
 	var home = "",
 		services = "",
@@ -58,8 +63,19 @@ mixin navbar(activePage)
 				ul.nav.navbar-nav
 					li(class=home)
 						a(href='index.html') Home
-					li(class=services)
-						a(href='#') Services
+					li.dropdown(class=services)
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+							| Services 
+							span.caret
+						ul.dropdown-menu
+							li(class=detailing)
+								a(href='detailing.html') Detailing
+							li(class=fabrication)
+								a(href='fabrication.html') Fabrication
+							li(class=shipping)
+								a(href='shipping.html') Shipping
+							li(class=erecting)
+								a(href='erecting.html') Erecting
 					li(class=projects)
 						a(href='projects.html') Projects
 				ul.nav.navbar-nav.navbar-right
