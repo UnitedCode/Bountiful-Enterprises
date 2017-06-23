@@ -7738,9 +7738,6 @@ button.close {
 
 .navbar .dropdown-menu {
   background-color: #1F3A93;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .navbar .dropdown-menu > li > a {
