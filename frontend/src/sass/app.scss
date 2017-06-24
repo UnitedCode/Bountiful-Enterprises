@@ -8,6 +8,10 @@ body {
 	margin-top: $navbar-height;
 }
 
+.row {
+	margin:0;
+}
+
 // Import app specific styles
 @import "_partials/navbar";
 @import "_partials/footer"

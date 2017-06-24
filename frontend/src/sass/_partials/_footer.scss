@@ -13,6 +13,15 @@ footer {
 
 	.certifications {
 
+		display: flex;
+		justify-content: center;		
+		
+		ul {			
+			li {
+				text-align: left;
+			}
+		}
+		
 		img {
 			display: inline-block;
 			height: 40px

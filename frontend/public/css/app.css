@@ -5206,15 +5206,15 @@ tbody.collapse.in {
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  border-color: #FFF;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: #38539B;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #FFF;
 }
 
 .navbar-default .navbar-collapse,
@@ -7740,6 +7740,10 @@ body {
   margin-top: 50px;
 }
 
+.row {
+  margin: 0;
+}
+
 .navbar .dropdown-menu {
   background-color: #1F3A93;
 }
@@ -7771,6 +7775,15 @@ footer ul {
 
 footer ul li {
   padding: 5px;
+}
+
+footer .certifications {
+  display: flex;
+  justify-content: center;
+}
+
+footer .certifications ul li {
+  text-align: left;
 }
 
 footer .certifications img {
