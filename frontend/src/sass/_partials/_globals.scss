@@ -8,8 +8,32 @@ body {
 	margin:0;
 }
 
-
 .block-center{
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+}
+
+// Used for vertical alignmnet. The element this is applied to must have a width
+.valign-parent {
+	display: table;
+	overflow: hidden;
+}
+
+// Container for content to be vertically aligned inside of .valign-parent
+.valign-child {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.image-header {
+	height: 250px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	h1 {
+		text-align: center;
+		color: #FFF;
+		font-size: 8rem;
+	}
 }
