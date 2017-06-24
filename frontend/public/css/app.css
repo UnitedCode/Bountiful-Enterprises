@@ -10797,6 +10797,10 @@ body {
   margin: 0 auto;
 }
 
+.carousel-inner img {
+  margin: auto;
+}
+
 .valign-parent {
   display: table;
   overflow: hidden;
