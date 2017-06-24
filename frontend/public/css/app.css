@@ -10818,6 +10818,7 @@ body {
   text-align: center;
   color: #FFF;
   font-size: 8rem;
+  text-shadow: 2px 2px #333;
 }
 
 .navbar .dropdown-menu {
@@ -10887,4 +10888,34 @@ footer a:focus, footer a:hover {
 
 #contact-header {
   background-image: url("http://via.placeholder.com/1200x250");
+}
+
+#contact-card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+}
+
+#contact-card hr {
+  border: 1px solid grey;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#contact-card .name {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#contact-card .name h3 {
+  display: inline-block;
+  position: relative;
+  top: -6px;
+}
+
+#contact-card table {
+  width: 100%;
+}
+
+#contact-card table .right {
+  text-align: right;
 }
