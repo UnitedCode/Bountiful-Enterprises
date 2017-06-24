@@ -8,9 +8,15 @@ body {
 	margin:0;
 }
 
+// Used to center elements
 .block-center{
 	display: block;
 	margin: 0 auto;
+}
+
+// Used to center the carousel images
+.carousel-inner img{
+    margin: auto;
 }
 
 // Used for vertical alignmnet. The element this is applied to must have a width
