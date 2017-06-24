@@ -1,4 +1,15 @@
+
+body {
+	// Offset for the fixed navigation on all pages
+	margin-top: $navbar-height;
+}
+
+.row {
+	margin:0;
+}
+
+
 .block-center{
     display: block;
-    margin: 0 auto;
+    margin: auto;
 }

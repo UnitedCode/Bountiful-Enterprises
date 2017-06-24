@@ -6,7 +6,30 @@ html(lang='en')
 	body
 		include _partials/_navbar.pug
 		+navbar("Home")
+		
+		#myCarousel.carousel.slide(data-ride='carousel')
+			// Indicators
+			ol.carousel-indicators
+				li.active(data-target='#myCarousel', data-slide-to='0')
+				li(data-target='#myCarousel', data-slide-to='1')
+				li(data-target='#myCarousel', data-slide-to='2')
 
+			// Wrapper for slides
+			.carousel-inner.block-center
+				.item.active
+					img(src='http://via.placeholder.com/1200x800', alt='')
+				.item
+					img(src='http://via.placeholder.com/1200x800', alt='')
+				.item
+					img(src='http://via.placeholder.com/1200x800', alt='')
+
+			// Left and right controls
+			a.left.carousel-control(href='#myCarousel', data-slide='prev')
+				span.glyphicon.glyphicon-chevron-left
+				span.sr-only Previous
+			a.right.carousel-control(href='#myCarousel', data-slide='next')
+				span.glyphicon.glyphicon-chevron-right
+				span.sr-only Next
 		
 		include _partials/_footer.pug
 		include _partials/_scripts.pug

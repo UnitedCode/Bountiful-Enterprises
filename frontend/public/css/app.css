@@ -7736,14 +7736,6 @@ button.close {
   }
 }
 
-body {
-  margin-top: 50px;
-}
-
-.row {
-  margin: 0;
-}
-
 .navbar .dropdown-menu {
   background-color: #1F3A93;
 }
