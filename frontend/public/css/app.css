@@ -10825,6 +10825,10 @@ body {
   text-shadow: 2px 2px #333;
 }
 
+.material-shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
 .navbar .dropdown-menu {
   background-color: #1F3A93;
 }
@@ -10895,8 +10899,8 @@ footer a:focus, footer a:hover {
 }
 
 #contact-card {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 10px;
+  margin: 3rem 0;
 }
 
 #contact-card hr {
@@ -10916,10 +10920,29 @@ footer a:focus, footer a:hover {
   top: -6px;
 }
 
+#contact-card .contact-information {
+  padding-left: 40px;
+}
+
 #contact-card table {
   width: 100%;
 }
 
+#contact-card table p {
+  margin: 0;
+}
+
+#contact-card table tr > td {
+  padding-bottom: 12px;
+  font-size: 1.7rem;
+  vertical-align: top;
+}
+
 #contact-card table .right {
   text-align: right;
+}
+
+#map-container {
+  width: 100%;
+  background-color: #E1E1E1;
 }
