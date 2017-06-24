@@ -10847,6 +10847,10 @@ body {
   background-color: #38539B;
 }
 
+.navbar-brand img {
+  height: 20px;
+}
+
 footer {
   width: 100%;
   background: #1F3A93;
@@ -10894,6 +10898,10 @@ footer a:focus, footer a:hover {
   text-decoration: underline;
 }
 
+.footer-logo {
+  padding: 25px 10px;
+}
+
 #contact-header {
   background-image: url("http://via.placeholder.com/1200x250");
 }
@@ -10901,6 +10909,7 @@ footer a:focus, footer a:hover {
 #contact-card {
   padding: 10px;
   margin: 3rem 0;
+  background-color: #fbfbfb;
 }
 
 #contact-card hr {
@@ -10945,4 +10954,28 @@ footer a:focus, footer a:hover {
 #map-container {
   width: 100%;
   background-color: #E1E1E1;
+}
+
+#map {
+  background-color: #FFF;
+  padding-bottom: 25px;
+  margin: 40px 0;
+}
+
+#map h3 {
+  padding-top: 6px;
+}
+
+#map img {
+  margin: 0 auto;
+  display: block;
+}
+
+.g-map {
+  text-align: center;
+}
+
+.g-map iframe {
+  width: 100%;
+  height: 450px;
 }

@@ -5,6 +5,7 @@
 #contact-card {
 	padding: 10px;
 	margin: 3rem 0;
+	background-color: lighten($background-color, 10%);
 	hr {
 		border: 1px solid grey;
 		width: 90%;
@@ -52,5 +53,25 @@
 }
 
 #map {
+	background-color: #FFF;
+	padding-bottom: 25px;
+	margin: 40px 0;
 
+	h3 {
+		padding-top: 6px;
+	}
+
+	img {
+		margin: 0 auto;
+    display: block;
+	}
+}
+
+.g-map {
+	text-align: center;	
+
+	iframe {
+		width: 100%;
+		height: 450px;
+	}
 }
