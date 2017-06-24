@@ -7736,6 +7736,19 @@ button.close {
   }
 }
 
+body {
+  margin-top: 50px;
+}
+
+.row {
+  margin: 0;
+}
+
+.block-center {
+  display: block;
+  margin: 0 auto;
+}
+
 .navbar .dropdown-menu {
   background-color: #1F3A93;
 }

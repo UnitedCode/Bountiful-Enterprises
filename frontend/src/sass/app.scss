@@ -3,6 +3,7 @@
 // Import libraries
 @import "bootstrap/bootstrap";
 // Import app specific styles
-@import "_globals";
+@import "_partials/globals";
 @import "_partials/navbar";
 @import "_partials/footer";
+@import "_partials/contact";

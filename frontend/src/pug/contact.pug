@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+	
+	body
+		include _partials/_navbar.pug
+		+navbar("Contact")
+
+		
+		.image-header
+			h1 Contact
+
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					#contact-card
+			#map-container
+				#map
+		
+		include _partials/_footer.pug
+		include _partials/_scripts.pug
