@@ -11131,3 +11131,16 @@ footer a:focus, footer a:hover {
 .fab-text p {
   font-size: 1.7rem;
 }
+
+#shipping-header {
+  background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.ship {
+  padding: 30px;
+}
+
+.ship-img img {
+  height: 500px;
+  margin: 0 auto;
+}
