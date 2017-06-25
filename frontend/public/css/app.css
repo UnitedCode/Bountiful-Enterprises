@@ -10788,6 +10788,10 @@ body {
   margin-top: 50px;
 }
 
+p, h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Roboto', sans-serif;
+}
+
 .row {
   margin: 0;
 }
@@ -11161,4 +11165,17 @@ footer a:focus, footer a:hover {
 
 .fab-text p {
   font-size: 1.7rem;
+}
+
+#shipping-header {
+  background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.ship {
+  padding: 30px;
+}
+
+.ship-img img {
+  height: 500px;
+  margin: 0 auto;
 }
