@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+	
+	body
+		include _partials/_mixins.pug
+		+navbar("Fabrication")
+
+		+header("Fabrication")
+
+		.fab.fab-grey
+			.container
+				.row
+					.col-md-3.col-md-push-9.fab-img
+						img.img-responsive(src="http://via.placeholder.com/250")
+					.col-md-9.col-md-pull-3.fab-text
+						h3.text-center Python
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		.fab
+			.container
+				.row
+					.col-md-3.fab-img
+						img.img-responsive(src="http://via.placeholder.com/250")
+					.col-md-9.fab-text
+						h3.text-center Pro Tools
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		.fab.fab-grey
+			.container
+				.row
+					.col-md-3.col-md-push-9.fab-img
+						img.img-responsive(src="http://via.placeholder.com/250")
+					.col-md-9.col-md-pull-3.fab-text
+						h3.text-center Standards
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		
+		include _partials/_footer.pug
+		include _partials/_scripts.pug
