@@ -11110,6 +11110,37 @@ footer a:focus, footer a:hover {
   margin: 15px auto 0 auto;
 }
 
+#detailing-header {
+  background-color: #303030;
+}
+
+#detailing-header h1 {
+  color: #FFF;
+  font-weight: bold;
+}
+
+#tekla-model {
+  display: initial;
+  text-align: center;
+}
+
+#tekla-model div {
+  margin-bottom: 22px;
+}
+
+#tekla-model iframe {
+  width: 100%;
+  height: 480px;
+}
+
+#detailing-panels .row {
+  padding: 40px 0;
+}
+
+#detailing-panels .panel-heading {
+  font-weight: bold;
+}
+
 #fabrication-header {
   background-image: url("http://via.placeholder.com/1200x250");
 }
