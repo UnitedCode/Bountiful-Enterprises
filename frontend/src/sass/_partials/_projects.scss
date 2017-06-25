@@ -1,0 +1,129 @@
+#projects-header {
+	background-image: url("http://via.placeholder.com/1200x250");
+}
+
+/* Acordian styles */
+
+.projects {
+	margin: 20px 0;
+
+	.tab {
+		position: relative;
+		width: 100%;
+		color: #FFF;
+		border-bottom: 1px solid #FFF;
+	}
+
+	input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+
+	label {
+		position: relative;
+		display: block;
+		padding: 0 0 0 1em;
+		margin: 0;
+		background: $primary-color;
+		font-size: 30px;
+		line-height: 2;
+		cursor: pointer;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	label:hover {
+		background-color: lighten($primary-color, 3%);
+	}
+
+	label.link a {
+		text-decoration: none;
+	}
+
+	.tab-content {
+		background: $secondary-color;
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 10px;
+		-webkit-transition: max-height .9s;
+		-o-transition: max-height .9s;
+		transition: max-height .9s;
+	}
+
+	input:checked ~ .tab-content {
+		max-height: 100rem;
+	}
+
+
+	/* Icon */
+
+	label:before,
+	label:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 30px;
+		height: 30px;
+		background-color: #FFF;
+		transition: transform 0.25s ease-out;
+	}
+
+	label:before {
+		top: 19px;
+		right: 25px;
+		width: 2px;
+		height: 20px;
+		background: #FFF;
+	}
+
+	label:after {
+		top: 50%;
+		right: 15px;
+		width: 23px;
+		height: 2px;
+		margin-top: -2px;
+		background: #FFF;
+	}
+
+	input[type=checkbox]:checked + label:before {
+		transform: rotate(90deg);
+	}
+
+	input[type=checkbox]:checked + label:after {
+		transform: rotate(180deg);
+	}
+
+	input[type=checkbox] + label.link:after,
+	input[type=checkbox] + label.link:before {
+		display: none;
+	}
+
+	table {
+		width: 100%;
+		tbody {
+			tr {
+				border-bottom: 1px solid #FFF;
+
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+
+		td {
+			padding: 10px 0;
+		}
+
+		thead {
+			tr {
+				border-bottom: 1px solid #FFF;
+			}
+			td {
+				font-weight: bold;
+			}
+		}
+	}
+}
