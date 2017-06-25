@@ -11106,6 +11106,10 @@ footer a:focus, footer a:hover {
   font-weight: bold;
 }
 
+.project-img img {
+  margin: 15px auto 0 auto;
+}
+
 #fabrication-header {
   background-image: url("http://via.placeholder.com/1200x250");
 }
