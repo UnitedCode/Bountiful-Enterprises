@@ -11137,10 +11137,18 @@ footer a:focus, footer a:hover {
 }
 
 .ship {
-  padding: 30px;
+  padding-top: 75px;
 }
 
 .ship-img img {
-  height: 500px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.ship-panel {
+  margin: 35px 0 75px 0;
+}
+
+.s-panel-title {
+  font-weight: bold;
+  text-align: center;
 }
