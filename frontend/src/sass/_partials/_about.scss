@@ -3,8 +3,18 @@
 }
 
 .about {
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   font-family: $roboto;
+
+  .cert {
+    text-align: center;
+    img {
+      display: inline-block;
+    }
+    p {
+      display: inline-block;
+    }
+  }
 }
 
 .about-panel {
@@ -22,14 +32,9 @@
   font-family: $roboto;
 }
 
-.cert {
-  text-align: center;
-  img {
-    display: inline-block;
-  }
-  p {
-    display: inline-block;
-  }
+.meet-the-team {
+  background-color: $background-color;
+  padding-bottom: 50px;
 }
 
 .gray {
@@ -39,6 +44,11 @@
 .mug-title {
   text-align: center;
   padding: 0px 100px;
+
+  hr {
+    border: 1px solid darken($background-color, 10%);
+  }
+
   h2 {
     font-weight: bold;
   }

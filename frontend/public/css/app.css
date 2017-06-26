@@ -10912,8 +10912,20 @@ footer a:focus, footer a:hover {
 }
 
 .about {
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   font-family: "Roboto", sans-serif;
+}
+
+.about .cert {
+  text-align: center;
+}
+
+.about .cert img {
+  display: inline-block;
+}
+
+.about .cert p {
+  display: inline-block;
 }
 
 .about-panel {
@@ -10931,16 +10943,9 @@ footer a:focus, footer a:hover {
   font-family: "Roboto", sans-serif;
 }
 
-.cert {
-  text-align: center;
-}
-
-.cert img {
-  display: inline-block;
-}
-
-.cert p {
-  display: inline-block;
+.meet-the-team {
+  background-color: #E1E1E1;
+  padding-bottom: 50px;
 }
 
 .gray {
@@ -10950,6 +10955,10 @@ footer a:focus, footer a:hover {
 .mug-title {
   text-align: center;
   padding: 0px 100px;
+}
+
+.mug-title hr {
+  border: 1px solid #c8c8c8;
 }
 
 .mug-title h2 {
