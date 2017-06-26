@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+
+	body
+		include _partials/_mixins.pug
+		+navbar("About")
+
+		+header("About")
+
+		.about
+			.container
+				.about-panel.panel.panel-default
+					.panel-heading.a-panel-title Becoming Excellent
+					.panel-body.panel-text Company History/ BIO Certification/ Dates
+						br
+						| -
+						br
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						br
+						| -
+						br
+						| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+					.row
+						.col-md-4.cert
+							img(src="http://via.placeholder.com/58")
+							p Certification One
+						.col-md-4.cert
+							img(src="http://via.placeholder.com/58")
+							p Certification One
+						.col-md-4.cert
+							img(src="http://via.placeholder.com/58")
+							p Certification One
+				
+				.mug-title.gray
+					h2 Meet the Team
+					hr
+				
+				.row.gray
+					.col-md-offset-2.col-md-4.mug
+						h2 Tom Zitting
+						img(src="http://via.placeholder.com/250x250")
+						p General Manager
+					.col-md-4.mug
+						h2 Mark Bradshaw
+						img(src="http://via.placeholder.com/250x250")
+						p Accounts Payable
+				.row.gray
+					.col-md-4.mug
+						h2 Tommy Zitting
+						img(src="http://via.placeholder.com/250x250")
+						p Operations Manager
+					.col-md-4.mug
+						h2 Tina Ashman
+						img(src="http://via.placeholder.com/250x250")
+						p Estimating
+					.col-md-4.mug
+						h2 Josh Ashman
+						img(src="http://via.placeholder.com/250x250")
+						p Project Manager
+		include _partials/_footer.pug
+		include _partials/_scripts.pug

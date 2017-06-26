@@ -10907,6 +10907,68 @@ footer a:focus, footer a:hover {
   padding: 25px 10px;
 }
 
+#about-header {
+  background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.about {
+  margin: 50px 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.about-panel {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.a-panel-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.panel-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.cert {
+  text-align: center;
+}
+
+.cert img {
+  display: inline-block;
+}
+
+.cert p {
+  display: inline-block;
+}
+
+.gray {
+  color: #555555;
+}
+
+.mug-title {
+  text-align: center;
+  padding: 0px 100px;
+}
+
+.mug-title h2 {
+  font-weight: bold;
+}
+
+.mug {
+  text-align: center;
+}
+
+.mug h2 {
+  font-weight: bold;
+}
+
+.mug p {
+  font-size: 2.5rem;
+  padding-top: 5px;
+}
+
 #contact-header {
   background-image: url("http://via.placeholder.com/1200x250");
 }
@@ -11194,6 +11256,7 @@ footer a:focus, footer a:hover {
 }
 
 .s-panel-title {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
 }
