@@ -10938,6 +10938,14 @@ footer a:focus, footer a:hover {
   padding-left: 40px;
 }
 
+#contact-card .contact-item {
+  color: #626262;
+}
+
+#contact-card .contact-item-icon {
+  color: #6e6e6e;
+}
+
 #contact-card table {
   width: 100%;
 }
@@ -10974,6 +10982,8 @@ footer a:focus, footer a:hover {
 #map img {
   margin: 0 auto;
   display: block;
+  border: 3px solid #bbbbbb;
+  border-radius: 3px;
 }
 
 .g-map {
