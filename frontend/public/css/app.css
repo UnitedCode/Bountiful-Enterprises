@@ -10788,6 +10788,10 @@ body {
   margin-top: 50px;
 }
 
+p, h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Roboto', sans-serif;
+}
+
 .row {
   margin: 0;
 }
@@ -10934,6 +10938,14 @@ footer a:focus, footer a:hover {
   padding-left: 40px;
 }
 
+#contact-card .contact-item {
+  color: #626262;
+}
+
+#contact-card .contact-item-icon {
+  color: #6e6e6e;
+}
+
 #contact-card table {
   width: 100%;
 }
@@ -10970,6 +10982,8 @@ footer a:focus, footer a:hover {
 #map img {
   margin: 0 auto;
   display: block;
+  border: 3px solid #bbbbbb;
+  border-radius: 3px;
 }
 
 .g-map {
@@ -11110,6 +11124,37 @@ footer a:focus, footer a:hover {
   margin: 15px auto 0 auto;
 }
 
+#detailing-header {
+  background-color: #303030;
+}
+
+#detailing-header h1 {
+  color: #FFF;
+  font-weight: bold;
+}
+
+#tekla-model {
+  display: initial;
+  text-align: center;
+}
+
+#tekla-model div {
+  margin-bottom: 22px;
+}
+
+#tekla-model iframe {
+  width: 100%;
+  height: 480px;
+}
+
+#detailing-panels .row {
+  padding: 40px 0;
+}
+
+#detailing-panels .panel-heading {
+  font-weight: bold;
+}
+
 #fabrication-header {
   background-image: url("http://via.placeholder.com/1200x250");
 }
@@ -11151,4 +11196,8 @@ footer a:focus, footer a:hover {
 .s-panel-title {
   font-weight: bold;
   text-align: center;
+}
+
+#erecting-header {
+  background-image: url("http://via.placeholder.com/1200x250");
 }

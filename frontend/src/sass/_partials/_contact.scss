@@ -26,9 +26,17 @@
 		padding-left: 40px;
 	}
 
+	.contact-item {
+		color: darken($background-color, 50%);
+	}
+
+	.contact-item-icon {
+		color: darken($background-color, 45%);
+	}
+
 	table {
 		width: 100%;
-		
+
 		p {
 			margin: 0;
 		}
@@ -64,11 +72,13 @@
 	img {
 		margin: 0 auto;
     display: block;
+		border: 3px solid darken($background-color, 15%);
+		border-radius: 3px;
 	}
 }
 
 .g-map {
-	text-align: center;	
+	text-align: center;
 
 	iframe {
 		width: 100%;
