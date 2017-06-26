@@ -10784,6 +10784,11 @@ button.close {
   clip: auto;
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin-top: 50px;
 }
@@ -11273,4 +11278,26 @@ footer a:focus, footer a:hover {
 
 #erecting-header {
   background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.erecting {
+  padding: 20px 0;
+}
+
+.erecting img {
+  width: 100%;
+  display: block;
+}
+
+.erecting .row {
+  display: flex;
+}
+
+.erecting .col-md-4, .erecting .col-md-8 {
+  align-items: stretch;
+  margin: 15px 0 0 0;
+}
+
+.erecting .panel {
+  height: 100%;
 }
