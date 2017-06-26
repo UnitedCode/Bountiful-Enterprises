@@ -11186,7 +11186,8 @@ footer a:focus, footer a:hover {
 }
 
 .ship-img img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .ship-panel {
@@ -11194,6 +11195,7 @@ footer a:focus, footer a:hover {
 }
 
 .s-panel-title {
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
 }
