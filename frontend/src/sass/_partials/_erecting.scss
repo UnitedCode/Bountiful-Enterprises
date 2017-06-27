@@ -1,0 +1,27 @@
+#erecting-header {
+	background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.erecting {
+	$row-height: 275px;
+
+	padding: 20px 0;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
+	.row {
+		display: flex;
+	}
+
+	.col-md-4, .col-md-8 {
+		align-items: stretch;
+		margin: 15px 0 0 0;
+	}
+
+	.panel {
+		height: 100%;
+	}
+}

@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+
+	body
+		include _partials/_mixins.pug
+
+		+navbar("Erecting")
+
+		+header("Erecting")
+
+		.container.erecting
+			.row
+				.col-md-4
+					.narrow-img.left-image
+						img(src="http://via.placeholder.com/400")
+				.col-md-8.e-panel
+					.panel.panel-default
+						.panel-heading Service Overveiw
+						.panel-body
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.row
+				.col-md-8
+					.large-img.left-image
+						img(src="http://via.placeholder.com/800x400")
+				.col-md-4.e-panel
+					.panel.panel-default
+						.panel-heading Service Overveiw
+						.panel-body
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			.row
+				.col-md-4.col-md-push-8
+					.narrow-img.right-image
+						img(src="http://via.placeholder.com/400")
+				.col-md-8.col-md-pull-4.e-panel
+					.panel.panel-default
+						.panel-heading Service Overveiw
+						.panel-body
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+		include _partials/_footer.pug
+		include _partials/_scripts.pug

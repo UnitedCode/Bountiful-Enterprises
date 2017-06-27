@@ -10784,12 +10784,17 @@ button.close {
   clip: auto;
 }
 
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin-top: 50px;
 }
 
 p, h1, h2, h3, h4, h5, h6, a {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .row {
@@ -10905,6 +10910,77 @@ footer a:focus, footer a:hover {
 
 .footer-logo {
   padding: 25px 10px;
+}
+
+#about-header {
+  background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.about {
+  margin: 50px 0 0 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.about .cert {
+  text-align: center;
+}
+
+.about .cert img {
+  display: inline-block;
+}
+
+.about .cert p {
+  display: inline-block;
+}
+
+.about-panel {
+  margin-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.a-panel-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.panel-text {
+  font-family: "Roboto", sans-serif;
+}
+
+.meet-the-team {
+  background-color: #E1E1E1;
+  padding-bottom: 50px;
+}
+
+.gray {
+  color: #555555;
+}
+
+.mug-title {
+  text-align: center;
+  padding: 0px 100px;
+}
+
+.mug-title hr {
+  border: 1px solid #c8c8c8;
+}
+
+.mug-title h2 {
+  font-weight: bold;
+}
+
+.mug {
+  text-align: center;
+}
+
+.mug h2 {
+  font-weight: bold;
+}
+
+.mug p {
+  font-size: 2.5rem;
+  padding-top: 5px;
 }
 
 #contact-header {
@@ -11182,10 +11258,46 @@ footer a:focus, footer a:hover {
 }
 
 .ship {
-  padding: 30px;
+  padding-top: 75px;
 }
 
 .ship-img img {
-  height: 500px;
+  display: block;
   margin: 0 auto;
+}
+
+.ship-panel {
+  margin: 35px 0 75px 0;
+}
+
+.s-panel-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#erecting-header {
+  background-image: url("http://via.placeholder.com/1200x250");
+}
+
+.erecting {
+  padding: 20px 0;
+}
+
+.erecting img {
+  width: 100%;
+  display: block;
+}
+
+.erecting .row {
+  display: flex;
+}
+
+.erecting .col-md-4, .erecting .col-md-8 {
+  align-items: stretch;
+  margin: 15px 0 0 0;
+}
+
+.erecting .panel {
+  height: 100%;
 }

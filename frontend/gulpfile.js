@@ -81,7 +81,7 @@ gulp.task('watch',function() {
 			// Delay browser reload by 1 second
 			setTimeout(function () {
 				browserSync.reload()
-			}, 1000)
+			}, 1500)
 		});
 });
 

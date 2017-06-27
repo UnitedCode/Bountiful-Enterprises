@@ -1,5 +1,5 @@
 // Import global color variables
-@import "_partials/colors";
+@import "_partials/variables";
 // Import libraries
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
@@ -7,8 +7,10 @@
 @import "_partials/globals";
 @import "_partials/navbar";
 @import "_partials/footer";
+@import "_partials/about";
 @import "_partials/contact";
 @import "_partials/projects";
 @import "_partials/detailing";
 @import "_partials/fabrication";
-@import "_partials/shipping"
+@import "_partials/shipping";
+@import "_partials/erecting";
