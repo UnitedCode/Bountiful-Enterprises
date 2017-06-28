@@ -11298,6 +11298,65 @@ footer a:focus, footer a:hover {
   margin: 15px 0 0 0;
 }
 
+.erecting .panel-heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.erecting .panel-body {
+  font-size: 1.7rem;
+}
+
 .erecting .panel {
   height: 100%;
+}
+
+.e-animation {
+  -moz-transform: perspective(400px) rotateX(90deg);
+  -o-transform: perspective(400px) rotateX(90deg);
+  -ms-transform: perspective(400px) rotateX(90deg);
+  -webkit-transform: perspective(400px) rotateX(90deg);
+  transform: perspective(400px) rotateX(90deg);
+}
+
+.e-animation:nth-child(1) {
+  animation: e-animate 1s linear 6s;
+}
+
+.e-animation:nth-child(2) {
+  animation: e-animate 1s linear 5s;
+}
+
+.e-animation:nth-child(3) {
+  animation: e-animate 1s linear 4s;
+}
+
+.e-animation:nth-child(4) {
+  animation: e-animate 1s linear 3s;
+}
+
+.e-animation:nth-child(5) {
+  animation: e-animate 1s linear 2s;
+}
+
+.e-animation:nth-child(6) {
+  animation: e-animate 1s linear 1s;
+}
+
+@keyframes e-animate {
+  from {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    -o-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+  }
+  to {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    -o-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
+  }
 }
