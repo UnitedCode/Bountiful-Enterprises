@@ -11313,50 +11313,55 @@ footer a:focus, footer a:hover {
 }
 
 .e-animation {
-  -moz-transform: perspective(400px) rotateX(90deg);
-  -o-transform: perspective(400px) rotateX(90deg);
-  -ms-transform: perspective(400px) rotateX(90deg);
-  -webkit-transform: perspective(400px) rotateX(90deg);
-  transform: perspective(400px) rotateX(90deg);
+  -moz-transform: perspective(500px) rotateX(90deg);
+  -o-transform: perspective(500px) rotateX(90deg);
+  -ms-transform: perspective(500px) rotateX(90deg);
+  -webkit-transform: perspective(500px) rotateX(90deg);
+  transform: perspective(500px) rotateX(90deg);
+  -moz-transform-origin: bottom;
+  -o-transform-origin: bottom;
+  -ms-transform-origin: bottom;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
 }
 
-.e-animation:nth-child(1) {
-  animation: e-animate 1s linear 6s;
+.e-animation#e-one {
+  animation: e-animate 0.3s linear 1s 1 forwards;
 }
 
-.e-animation:nth-child(2) {
-  animation: e-animate 1s linear 5s;
+.e-animation#e-two {
+  animation: e-animate 0.3s linear 0.8s 1 forwards;
 }
 
-.e-animation:nth-child(3) {
-  animation: e-animate 1s linear 4s;
+.e-animation#e-three {
+  animation: e-animate 0.3s linear 0.6s 1 forwards;
 }
 
-.e-animation:nth-child(4) {
-  animation: e-animate 1s linear 3s;
+.e-animation#e-four {
+  animation: e-animate 0.3s linear 0.4s 1 forwards;
 }
 
-.e-animation:nth-child(5) {
-  animation: e-animate 1s linear 2s;
+.e-animation#e-five {
+  animation: e-animate 0.3s linear 0.2s 1 forwards;
 }
 
-.e-animation:nth-child(6) {
-  animation: e-animate 1s linear 1s;
+.e-animation#e-six {
+  animation: e-animate 0.3s linear 0s 1 forwards;
 }
 
 @keyframes e-animate {
   from {
-    -moz-transform: perspective(400px) rotateX(90deg);
-    -o-transform: perspective(400px) rotateX(90deg);
-    -ms-transform: perspective(400px) rotateX(90deg);
-    -webkit-transform: perspective(400px) rotateX(90deg);
-    transform: perspective(400px) rotateX(90deg);
+    -moz-transform: perspective(500px) rotateX(90deg);
+    -o-transform: perspective(500px) rotateX(90deg);
+    -ms-transform: perspective(500px) rotateX(90deg);
+    -webkit-transform: perspective(500px) rotateX(90deg);
+    transform: perspective(500px) rotateX(90deg);
   }
   to {
-    -moz-transform: perspective(400px) rotateX(0deg);
-    -o-transform: perspective(400px) rotateX(0deg);
-    -ms-transform: perspective(400px) rotateX(0deg);
-    -webkit-transform: perspective(400px) rotateX(0deg);
-    transform: perspective(400px) rotateX(0deg);
+    -moz-transform: perspective(500px) rotateX(0deg);
+    -o-transform: perspective(500px) rotateX(0deg);
+    -ms-transform: perspective(500px) rotateX(0deg);
+    -webkit-transform: perspective(500px) rotateX(0deg);
+    transform: perspective(500px) rotateX(0deg);
   }
 }
