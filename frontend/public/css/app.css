@@ -3717,27 +3717,27 @@ fieldset[disabled] .btn-default.focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #38539B;
+  border-color: #38539B;
 }
 
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #2a3f76;
+  border-color: #16213d;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #2a3f76;
+  border-color: #283b6e;
 }
 
 .btn-primary:active, .btn-primary.active,
 .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #2a3f76;
+  border-color: #283b6e;
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
@@ -3745,8 +3745,8 @@ fieldset[disabled] .btn-default.focus {
 .open > .btn-primary.dropdown-toggle:focus,
 .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: #21315b;
+  border-color: #16213d;
 }
 
 .btn-primary:active, .btn-primary.active,
@@ -3758,12 +3758,12 @@ fieldset[disabled] .btn-default.focus {
 fieldset[disabled] .btn-primary:hover,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #38539B;
+  border-color: #38539B;
 }
 
 .btn-primary .badge {
-  color: #337ab7;
+  color: #38539B;
   background-color: #fff;
 }
 
@@ -10910,6 +10910,76 @@ footer a:focus, footer a:hover {
 
 .footer-logo {
   padding: 25px 10px;
+}
+
+#home-carousel {
+  width: 100%;
+}
+
+#home-carousel .item > img {
+  max-height: 70vh;
+}
+
+#home-carousel .carousel-control .fa {
+  position: absolute;
+  top: 48%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+
+#home .more-info {
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  height: 260px;
+  width: 100%;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  box-shadow: 1px 9px 20px 0px rgba(50, 50, 50, 0.4);
+}
+
+.info-card:hover,
+.info-card .info-card-description {
+  top: 200px;
+}
+
+.info-card .info-card-description {
+  -webkit-transition: top 0.7s;
+  /* Safari */
+  transition: top 0.7s;
+  position: relative;
+  top: 205px;
+  width: 100%;
+  height: 120%;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+
+.info-card .info-card-description h4 {
+  margin-left: 20px;
+  margin-top: 15px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+}
+
+.info-card .info-card-description .fa-chevron-up {
+  margin-top: 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+.info-card .info-card-description p {
+  padding: 20px;
+  font-size: 18px;
+}
+
+.info-card .info-card-description:hover, .info-card .info-card-description:focus {
+  top: -50px;
 }
 
 #about-header {
