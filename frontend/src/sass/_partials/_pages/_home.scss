@@ -9,12 +9,22 @@
 	}
 
 	.carousel-control {
-		.fa {
+		.fa-stack {
 			position: absolute;
 			top: 48%;
 			margin-top: -10px;
 			z-index: 5;
 			display: inline-block;
+
+			.fa-chevron-right {
+				position: relative;
+				left: 2px;
+			}
+
+			.fa-chevron-left {
+				position: relative;
+				left: -2px;
+			}
 		}
 	}
 }
