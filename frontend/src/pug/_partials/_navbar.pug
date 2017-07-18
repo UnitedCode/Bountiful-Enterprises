@@ -13,6 +13,7 @@
 		fabrication = "",
 		shipping = "",
 		erecting = "",
+		qualityControl = "",
 		active = "active";
 
 mixin navbar(activePage)
@@ -47,6 +48,10 @@ mixin navbar(activePage)
 				erecting = active;
 				services = active;
 				break;
+			case "quality control":
+				qualityControl = active;
+				services = active;
+				break;
 			default:
 				home = active;
 		}
@@ -77,6 +82,8 @@ mixin navbar(activePage)
 								a(href='shipping.html') Shipping
 							li(class=erecting)
 								a(href='erecting.html') Erecting
+							li(class=qualityControl)
+								a(href='quality-control.html') Quality Control
 					li(class=projects)
 						a(href='projects.html') Projects
 				ul.nav.navbar-nav.navbar-right
