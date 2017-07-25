@@ -8,10 +8,12 @@
 
   .cert {
     text-align: center;
+    padding-top: 10px;
     img {
       display: inline-block;
     }
     p {
+      font-size: 1.8rem;
       display: inline-block;
     }
   }
@@ -30,6 +32,8 @@
 
 .panel-text {
   font-family: $roboto;
+  font-size: 1.7rem;
+  line-height: 1.5em;
 }
 
 .meet-the-team {
@@ -43,7 +47,7 @@
 
 .mug-title {
   text-align: center;
-  padding: 0px 100px;
+  padding: 8px 100px 0px 100px;
 
   hr {
     border: 1px solid darken($background-color, 10%);
@@ -56,11 +60,24 @@
 
 .mug {
   text-align: center;
+  margin-bottom: 5px;
   h2 {
     font-weight: bold;
   }
   p {
     font-size: 2.5rem;
     padding-top: 5px;
+  }
+}
+
+.mug-contact {
+  text-align: center;
+  a {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+  a:hover {
+    color: #337ab7;
   }
 }
