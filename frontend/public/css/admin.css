@@ -10809,7 +10809,6 @@ body, html {
 
 .accordian-table {
   margin: 20px 0;
-  /* Icon */
 }
 
 .accordian-table .tab {
@@ -10817,15 +10816,16 @@ body, html {
   width: 100%;
   color: #FFF;
   border-bottom: 1px solid #FFF;
+  /* Icon */
 }
 
-.accordian-table input {
+.accordian-table .tab > input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
 
-.accordian-table label {
+.accordian-table .tab > label {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
@@ -10839,30 +10839,20 @@ body, html {
   transition: all 0.3s;
 }
 
-.accordian-table label:hover {
+.accordian-table .tab > label:hover {
   background-color: #223fa0;
 }
 
-.accordian-table label.link a {
+.accordian-table .tab > label.link a {
   text-decoration: none;
 }
 
-.accordian-table .tab-content {
-  background: #38539B;
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 10px;
-  -webkit-transition: max-height .9s;
-  -o-transition: max-height .9s;
-  transition: max-height .9s;
-}
-
-.accordian-table input:checked ~ .tab-content {
+.accordian-table .tab > input:checked ~ .tab-content {
   max-height: 100rem;
 }
 
-.accordian-table label:before,
-.accordian-table label:after {
+.accordian-table .tab > label:before,
+.accordian-table .tab > label:after {
   content: "";
   position: absolute;
   right: 0;
@@ -10873,7 +10863,7 @@ body, html {
   transition: transform 0.25s ease-out;
 }
 
-.accordian-table label:before {
+.accordian-table .tab > label:before {
   top: 19px;
   right: 25px;
   width: 2px;
@@ -10881,7 +10871,7 @@ body, html {
   background: #FFF;
 }
 
-.accordian-table label:after {
+.accordian-table .tab > label:after {
   top: 50%;
   right: 15px;
   width: 23px;
@@ -10890,16 +10880,16 @@ body, html {
   background: #FFF;
 }
 
-.accordian-table input[type=checkbox]:checked + label:before {
+.accordian-table .tab > input[type=checkbox]:checked + > label:before {
   transform: rotate(90deg);
 }
 
-.accordian-table input[type=checkbox]:checked + label:after {
+.accordian-table .tab > input[type=checkbox]:checked + > label:after {
   transform: rotate(180deg);
 }
 
-.accordian-table input[type=checkbox] + label.link:after,
-.accordian-table input[type=checkbox] + label.link:before {
+.accordian-table .tab > input[type=checkbox] + > label.link:after,
+.accordian-table .tab > input[type=checkbox] + > label.link:before {
   display: none;
 }
 
@@ -10927,6 +10917,16 @@ body, html {
   font-weight: bold;
 }
 
+.accordian-table .tab-content {
+  background: #38539B;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  -webkit-transition: max-height .9s;
+  -o-transition: max-height .9s;
+  transition: max-height .9s;
+}
+
 .navbar-fixed-left {
   background-color: #1F3A93;
   width: 300px;
@@ -10935,9 +10935,13 @@ body, html {
   height: 100%;
 }
 
+.navbar-fixed-left p {
+  display: inline-block;
+}
+
 .navbar-fixed-left i.fa {
   position: relative;
-  top: 5px;
+  top: 3px;
 }
 
 .navbar-fixed-left .navbar-brand {
@@ -10955,8 +10959,12 @@ body, html {
   width: 100%;
 }
 
-.navbar-fixed-left + .container {
-  padding-left: 160px;
+#content {
+  padding-left: 315px;
+}
+
+#content .container {
+  width: auto;
 }
 
 .navbar i.fa {
@@ -11043,4 +11051,10 @@ body, html {
 
 #login-panel input[type="submit"].btn {
   width: 100%;
+}
+
+.new-project-btn {
+  position: relative;
+  top: 30px;
+  z-index: 1;
 }

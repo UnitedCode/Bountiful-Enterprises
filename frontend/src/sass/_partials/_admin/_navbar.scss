@@ -5,9 +5,13 @@
   border-radius: 0;
 	height: 100%;
 
+	p {
+		display: inline-block;
+	}
+
 	i.fa {
 		position: relative;
-		top: 5px;
+		top: 3px;
 	}
 
 	.navbar-brand {
@@ -26,9 +30,13 @@
 			}
 		}
 	}
+}
 
-	& + .container {
-		padding-left: 160px;
+#content {
+	padding-left: 315px;
+
+	.container {
+		width: auto;
 	}
 }
 
