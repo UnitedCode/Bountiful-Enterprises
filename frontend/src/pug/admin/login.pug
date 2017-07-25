@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+
+	body
+		#login.valign-parent
+			.row.valign-child
+				.col-md-4.col-md-offset-4
+					img.img-responsive(src="../images/footer-logo.png")
+					.panel.material-shadow#login-panel
+						.panel-heading
+							h3.text-center Administrator
+						.panel-body
+							form
+								.form-group
+									input#username(type="text" name="username" required)
+									span.bar
+									label(for="#username") Username
+								.form-group
+									input#username(type="password" name="username" required)
+									span.bar
+									label(for="#password") Password
+								input.btn.btn-primary(type="Submit" value="Login")
