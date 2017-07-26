@@ -108,7 +108,18 @@ body, html {
 		}
 	}
 
+	.tab-content {
+		background: $secondary-color;
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 10px;
+		-webkit-transition: max-height .9s;
+		-o-transition: max-height .9s;
+		transition: max-height .9s;
+	}
+}
 
+#content {
 	table {
 		width: 100%;
 		tbody {
@@ -118,11 +129,18 @@ body, html {
 				&:last-child {
 					border-bottom: none;
 				}
+
+				&:hover {
+					background-color: lighten($secondary-color, 4%);
+				}
+			}
+			.btn {
+				float: right;
 			}
 		}
 
 		td {
-			padding: 10px 0;
+			padding: 5px 0;
 		}
 
 		thead {
@@ -133,16 +151,6 @@ body, html {
 				font-weight: bold;
 			}
 		}
-	}
-
-	.tab-content {
-		background: $secondary-color;
-		max-height: 0;
-		overflow: hidden;
-		padding: 0 10px;
-		-webkit-transition: max-height .9s;
-		-o-transition: max-height .9s;
-		transition: max-height .9s;
 	}
 }
 
@@ -162,6 +170,38 @@ body, html {
 
 		select, input {
 			color: #333333;
+		}
+	}
+}
+
+.new-btn {
+	position: relative;
+	top: 30px;
+	z-index: 1;
+
+	@media(max-width: 992px) {
+		position: static;
+		margin: 10px 0;
+	}
+}
+
+.panel-admin {
+	margin-top: 3rem;
+
+	.col-md-4 {
+		margin-bottom: 1.5rem;
+	}
+
+	select, input {
+		width: 100%;
+		padding: 0.5rem;
+	}
+
+	input[type="submit"] {
+		margin-top: 2.5rem;
+
+		@media (max-width: 992px) {
+			margin-top: 1.5rem;
 		}
 	}
 }

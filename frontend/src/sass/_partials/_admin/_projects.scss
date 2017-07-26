@@ -1,31 +1,3 @@
-.new-project-btn {
-	position: relative;
-	top: 30px;
-	z-index: 1;
-}
-
-#add-project, #edit-project {
-
-	margin-top: 3rem;
-
-	.col-md-4 {
-		margin-bottom: 1.5rem;
-	}
-
-	select, input {
-		width: 100%;
-		padding: 0.5rem;
-	}
-
-	input[type="submit"] {
-		margin-top: 2.5rem;
-
-		@media (max-width: 992px) {
-			margin-top: 1.5rem;
-		}
-	}
-}
-
 input[type="submit"]#save-project {
 	width: 48%;
 }

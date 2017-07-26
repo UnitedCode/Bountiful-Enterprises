@@ -10893,30 +10893,6 @@ body, html {
   display: none;
 }
 
-.accordian-table table {
-  width: 100%;
-}
-
-.accordian-table table tbody tr {
-  border-bottom: 1px solid #FFF;
-}
-
-.accordian-table table tbody tr:last-child {
-  border-bottom: none;
-}
-
-.accordian-table table td {
-  padding: 10px 0;
-}
-
-.accordian-table table thead tr {
-  border-bottom: 1px solid #FFF;
-}
-
-.accordian-table table thead td {
-  font-weight: bold;
-}
-
 .accordian-table .tab-content {
   background: #38539B;
   max-height: 0;
@@ -10925,6 +10901,38 @@ body, html {
   -webkit-transition: max-height .9s;
   -o-transition: max-height .9s;
   transition: max-height .9s;
+}
+
+#content table {
+  width: 100%;
+}
+
+#content table tbody tr {
+  border-bottom: 1px solid #FFF;
+}
+
+#content table tbody tr:last-child {
+  border-bottom: none;
+}
+
+#content table tbody tr:hover {
+  background-color: #3d5baa;
+}
+
+#content table tbody .btn {
+  float: right;
+}
+
+#content table td {
+  padding: 5px 0;
+}
+
+#content table thead tr {
+  border-bottom: 1px solid #FFF;
+}
+
+#content table thead td {
+  font-weight: bold;
 }
 
 .panel-admin {
@@ -10946,6 +10954,42 @@ body, html {
 
 .panel-admin .panel-body select, .panel-admin .panel-body input {
   color: #333333;
+}
+
+.new-btn {
+  position: relative;
+  top: 30px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .new-btn {
+    position: static;
+    margin: 10px 0;
+  }
+}
+
+.panel-admin {
+  margin-top: 3rem;
+}
+
+.panel-admin .col-md-4 {
+  margin-bottom: 1.5rem;
+}
+
+.panel-admin select, .panel-admin input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.panel-admin input[type="submit"] {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .panel-admin input[type="submit"] {
+    margin-top: 1.5rem;
+  }
 }
 
 .navbar-fixed-left {
@@ -10986,6 +11030,12 @@ body, html {
 
 #content .container {
   width: auto;
+}
+
+@media (max-width: 992px) {
+  #content {
+    padding-left: 0;
+  }
 }
 
 .navbar i.fa {
@@ -11074,35 +11124,6 @@ body, html {
   width: 100%;
 }
 
-.new-project-btn {
-  position: relative;
-  top: 30px;
-  z-index: 1;
-}
-
-#add-project, #edit-project {
-  margin-top: 3rem;
-}
-
-#add-project .col-md-4, #edit-project .col-md-4 {
-  margin-bottom: 1.5rem;
-}
-
-#add-project select, #add-project input, #edit-project select, #edit-project input {
-  width: 100%;
-  padding: 0.5rem;
-}
-
-#add-project input[type="submit"], #edit-project input[type="submit"] {
-  margin-top: 2.5rem;
-}
-
-@media (max-width: 992px) {
-  #add-project input[type="submit"], #edit-project input[type="submit"] {
-    margin-top: 1.5rem;
-  }
-}
-
 input[type="submit"]#save-project {
   width: 48%;
 }
@@ -11118,4 +11139,12 @@ input[type="submit"]#save-project {
   #delete-project input {
     top: -61px;
   }
+}
+
+#add-year input[type="submit"] {
+  margin-top: 0;
+}
+
+#add-year button {
+  width: 100%;
 }
