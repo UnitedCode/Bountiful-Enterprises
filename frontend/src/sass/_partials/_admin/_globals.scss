@@ -136,12 +136,32 @@ body, html {
 	}
 
 	.tab-content {
-			background: $secondary-color;
-			max-height: 0;
-			overflow: hidden;
-			padding: 0 10px;
-			-webkit-transition: max-height .9s;
-			-o-transition: max-height .9s;
-			transition: max-height .9s;
+		background: $secondary-color;
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 10px;
+		-webkit-transition: max-height .9s;
+		-o-transition: max-height .9s;
+		transition: max-height .9s;
+	}
+}
+
+.panel-admin {
+	border-radius: 0;
+	.panel-heading {
+		background-color: $primary-color;
+
+		h3 {
+			margin: 0;
 		}
+	}
+
+	.panel-body {
+		background-color: $secondary-color; 
+		color: #FFFFFF;
+
+		select, input {
+			color: #333333;
+		}
+	}
 }

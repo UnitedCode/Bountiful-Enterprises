@@ -10927,6 +10927,27 @@ body, html {
   transition: max-height .9s;
 }
 
+.panel-admin {
+  border-radius: 0;
+}
+
+.panel-admin .panel-heading {
+  background-color: #1F3A93;
+}
+
+.panel-admin .panel-heading h3 {
+  margin: 0;
+}
+
+.panel-admin .panel-body {
+  background-color: #38539B;
+  color: #FFFFFF;
+}
+
+.panel-admin .panel-body select, .panel-admin .panel-body input {
+  color: #333333;
+}
+
 .navbar-fixed-left {
   background-color: #1F3A93;
   width: 300px;
@@ -11057,4 +11078,44 @@ body, html {
   position: relative;
   top: 30px;
   z-index: 1;
+}
+
+#add-project, #edit-project {
+  margin-top: 3rem;
+}
+
+#add-project .col-md-4, #edit-project .col-md-4 {
+  margin-bottom: 1.5rem;
+}
+
+#add-project select, #add-project input, #edit-project select, #edit-project input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#add-project input[type="submit"], #edit-project input[type="submit"] {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  #add-project input[type="submit"], #edit-project input[type="submit"] {
+    margin-top: 1.5rem;
+  }
+}
+
+input[type="submit"]#save-project {
+  width: 48%;
+}
+
+#delete-project input {
+  width: 43.9%;
+  position: absolute;
+  right: 15px;
+  top: -73px;
+}
+
+@media (max-width: 992px) {
+  #delete-project input {
+    top: -61px;
+  }
 }
