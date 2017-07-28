@@ -14,11 +14,12 @@ html(lang='en')
 					.panel-body
 						h4 Choose an image to summarize the year
 						form
+							input#file-input(type="file" style="display:none;")
 							.row
 								.col-md-4
-									button.btn.btn-default Choose a file...
+									a(href="#").btn.btn-default#file-upload-btn Choose a file...
 								.col-md-4
-									input.form-control(type="text")
+									input.form-control#file-upload-text(type="text")
 								.col-md-4
 									input.btn.btn-default(type="submit" value="Add year")
 								

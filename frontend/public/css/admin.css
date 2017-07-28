@@ -11032,7 +11032,7 @@ body, html {
   width: auto;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   #content {
     padding-left: 0;
   }
@@ -11145,6 +11145,6 @@ input[type="submit"]#save-project {
   margin-top: 0;
 }
 
-#add-year button {
+#add-year a {
   width: 100%;
 }

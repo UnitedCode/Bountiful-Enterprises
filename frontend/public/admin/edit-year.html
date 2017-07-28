@@ -46,12 +46,11 @@
           <div class="panel-body">
             <h4>Choose an image to summarize the year</h4>
             <form>
+              <input id="file-input" type="file" style="display:none;">
               <div class="row">
+                <div class="col-md-4"><a class="btn btn-default" href="#" id="file-upload-btn">Choose a file...</a></div>
                 <div class="col-md-4">
-                  <button class="btn btn-default">Choose a file...</button>
-                </div>
-                <div class="col-md-4">
-                  <input class="form-control" type="text">
+                  <input class="form-control" id="file-upload-text" type="text">
                 </div>
                 <div class="col-md-4">
                   <input class="btn btn-success" type="submit" value="Update">
