@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Year;
+
 
 class PagesController extends Controller
 {
@@ -11,8 +13,10 @@ class PagesController extends Controller
         return view('index');
     }
 
-    public function projects() {
-        return view('projects');
+    public function projects(Year $years) {
+
+        $years = $years->all();
+        return view('projects', compact('years'));
     }
 
     public function about() {

@@ -23,21 +23,21 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="{{ route('home') }}">Home</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Services <span class="caret"></span></a>
+                <li {{ classActivePath('/') }}><a href="{{ route('home') }}">Home</a></li>
+                <li class="dropdown {!! classActiveSegment(1, 'services') !!}" {{ classActiveSegment(1, 'services') }}><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('detailing') }}">Detailing</a></li>
-                        <li><a href="{{ route('fabrication') }}">Fabrication</a></li>
-                        <li><a href="{{ route('shipping') }}">Shipping</a></li>
-                        <li><a href="{{ route('erecting') }}">Erecting</a></li>
-                        <li><a href="{{ route('quality-control') }}">Quality Control</a></li>
+                        <li {{ classActivePath('services/detailing') }}><a href="{{ route('detailing') }}">Detailing</a></li>
+                        <li {{ classActivePath('services/fabrication') }}><a href="{{ route('fabrication') }}">Fabrication</a></li>
+                        <li {{ classActivePath('services/shipping') }}><a href="{{ route('shipping') }}">Shipping</a></li>
+                        <li {{ classActivePath('services/erecting') }}><a href="{{ route('erecting') }}">Erecting</a></li>
+                        <li {{ classActivePath('services/quality-control') }}><a href="{{ route('quality-control') }}">Quality Control</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('projects') }}">Projects</a></li>
+                <li {{ classActivePath('projects') }}><a href="{{ route('projects') }}">Projects</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="{{ route('about') }}">About</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li {{ classActivePath('about') }}><a href="{{ route('about') }}">About</a></li>
+                <li {{ classActivePath('contact') }}><a href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -46,7 +46,9 @@
 <footer>
     <div class="row">
         <!--Logo-->
-        <div class="col-sm-3 footer-logo"><img class="img-responsive" src="images/footer-logo.png"></div>
+        <div class="col-sm-3 footer-logo">
+            <img class="img-responsive" src="/images/footer-logo.png">
+        </div>
         <!--Footer links-->
         <div class="col-sm-6">
             <div class="row">
