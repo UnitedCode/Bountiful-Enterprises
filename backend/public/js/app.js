@@ -68,7 +68,8 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(4);
+__webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -12726,6 +12727,12 @@ if (typeof jQuery === 'undefined') {
 
 /***/ }),
 /* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
