@@ -13,7 +13,9 @@
                     <input id="tab-{{ $year->id }}" type="checkbox" name="tabs">
                     <label for="tab-{{ $year->id }}">{{ $year->year }} - {{ $year->weight }} tons</label>
                     <div class="tab-content">
-                        <div class="project-img"><img class="img-responsive" src="http://via.placeholder.com/400x250"></div>
+                        <div class="project-img">
+                            <img class="img-responsive" src="/images/projects/{{ $year->image }}">
+                        </div>
                         <table>
                             <thead>
                                 <tr>
