@@ -8,15 +8,15 @@ use App\Http\Controllers\Controller;
 
 class YearsController extends Controller
 {
-    public function index(Year $year)
+    public function index(Year $years)
     {
-        $year = $year->all();
-        return view("admin.years.index");
+        $years = $years->all();
+        return view('admin.years.index', compact('years'));
     }
 
     public function create()
     {
-        return view("admin.years.create");
+        return view('admin.years.create');
     }
 
     public function store()
@@ -24,9 +24,9 @@ class YearsController extends Controller
         return redirect()->route('admin-years');
     }
 
-    public function edit()
+    public function edit(Year $year)
     {
-        return view("admin.years.edit");
+        return view('admin.years.edit', compact('year'));
     }
 
     public function destroy()
