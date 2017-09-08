@@ -11555,7 +11555,7 @@ footer a:focus, footer a:hover {
 
 @media (max-width: 768px) {
   .quality-panels > .q-cell .center img {
-    width: 800px;
+    width: 80%;
   }
 }
 

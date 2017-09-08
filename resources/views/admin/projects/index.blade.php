@@ -3,7 +3,6 @@
 @section("content")
     <div class="accordian-table">
         @foreach($years as $year)
-
             <div class="tab">
                 <input id="tab-{{ $year->id }}" type="checkbox" name="tabs">
                 <label for="tab-{{ $year->id }}">{{ $year->year }} - {{ $year->weight }} tons</label>
