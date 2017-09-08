@@ -17,7 +17,7 @@ class CreateYearsTable extends Migration
             $table->increments('id');
             $table->string('year');
             $table->text('image');
-            $table->float('weight');
+            $table->float('weight')->default(0);
             $table->timestamps();
         });
     }

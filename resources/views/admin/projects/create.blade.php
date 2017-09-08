@@ -6,11 +6,12 @@
             <h3 class="text-center">New Project</h3>
         </div>
         <div class="panel-body">
-            <form>
+            <form method="POST" action="{{ route('store-project') }}">
+                {{ csrf_field() }}
                 <div class="row">
                     <div class="col-md-4">
                         <label for="#year">Year</label><br>
-                        <select class="form-control" id="year">
+                        <select class="form-control" id="year" name="year_id">
                             @foreach($years as $year)
                                 <option value="{{ $year->id }}">{{ $year->year }}</option>
                             @endforeach
@@ -18,17 +19,17 @@
                     </div>
                     <div class="col-md-4">
                         <label for="#job-name">Job</label><br>
-                        <input class="form-control" id="job-name" type="text">
+                        <input class="form-control" id="job-name" type="text" name="name">
                     </div>
                     <div class="col-md-4">
                         <label for="#city">City</label><br>
-                        <input class="form-control" id="city" type="text">
+                        <input class="form-control" id="city" type="text" name="city">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <label for="#state">State</label><br>
-                        <select class="form-control" id="state">
+                        <select class="form-control" id="state" name="state">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -37,7 +38,7 @@
                             <option value="CO">Colorado</option>
                             <option value="CT">Connecticut</option>
                             <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
+                            <option value="DC">District of Columbia</option>
                             <option value="FL">Florida</option>
                             <option value="GA">Georgia</option>
                             <option value="HI">Hawaii</option>
@@ -84,7 +85,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="#weight">Weight (tons)</label><br>
-                        <input class="form-control" id="weight" type="text">
+                        <input class="form-control" id="weight" type="text" name="weight">
                     </div>
                     <div class="col-md-4">
                         <input class="btn btn-default" type="submit" value="Add Job">

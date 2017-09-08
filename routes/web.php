@@ -25,8 +25,8 @@ Route::prefix('services')->group(function () {
 });
 
 Route::prefix('admin')->group(function () {
-   Route::get('/', function() {return redirect('/admin/login');})->name('login');
    Auth::routes();
+   Route::get('/', function() {return redirect('/admin/login');})->name('login');
 
    Route::middleware('auth')->group(function() {
        Route::get('logout', 'Auth\LoginController@logout')->name('logout');
@@ -47,9 +47,3 @@ Route::prefix('admin')->group(function () {
 
    });
 });
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <label for="#year">Year</label><br>
-                        <select class="form-control" id="year">
+                        <select class="form-control" id="year" name="year_id">
                             @foreach($years as $year)
                                 @if($project->year_id === $year->id)
                                     <option value="{{ $year->id }}" selected>{{ $year->year }}</option>
@@ -23,17 +23,17 @@
                     </div>
                     <div class="col-md-4">
                         <label for="#job-name">Job</label><br>
-                        <input class="form-control" id="job-name" type="text" value="{{ $project->name }}">
+                        <input class="form-control" id="job-name" type="text" value="{{ $project->name }}" name="name">
                     </div>
                     <div class="col-md-4">
                         <label for="#city">City</label><br>
-                        <input class="form-control" id="city" type="text" value="{{ $project->city }}">
+                        <input class="form-control" id="city" type="text" value="{{ $project->city }}" name="city">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
                         <label for="#state">State</label><br>
-                        <select class="form-control" id="state">
+                        <select class="form-control" id="state" name="state">
                             @php
                             $states = array(
                                 'AL'=>'Alabama',
@@ -101,7 +101,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="#weight">Weight (tons)</label><br>
-                        <input class="form-control" id="weight" type="text" value="{{ $project->weight }}">
+                        <input class="form-control" id="weight" type="text" value="{{ $project->weight }}" name="weight">
                     </div>
                     <div class="col-md-4">
                         <input class="btn btn-success" id="save-project" type="submit" value="Save">
