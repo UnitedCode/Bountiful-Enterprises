@@ -1,0 +1,11 @@
+// Navbar styling
+
+.navbar {
+	@import "dropdown";
+}
+
+.navbar-brand {
+	img {
+		height: 20px;
+	}
+}

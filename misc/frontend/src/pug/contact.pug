@@ -1,0 +1,84 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+	
+	body
+		include _partials/_mixins.pug
+		+navbar("Contact")
+
+		+header("Contact")
+
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					#contact-card.material-shadow
+						h3.text-center How To Reach Us
+						hr
+						.name
+							i.fa.fa-address-book-o.fa-3x.contact-item-icon
+							h3.contact-item Bountiful Enterprises
+						.contact-information
+							table
+								tbody
+									tr
+										td.contact-item-icon
+											i.fa.fa-envelope
+										td.contact-item
+											p Email
+										td.right
+											a(href="mailto:contact@bountifulenterprises.com") contact@bountifulenterprises.com
+									tr
+										td.contact-item-icon
+											i.fa.fa-phone
+										td.contact-item
+											p Phone Number
+										td.right
+											a(href="tel:4172762520") (417) 276-2520
+									tr
+										td.contact-item-icon
+											i.fa.fa-fax
+										td.contact-item
+											p Fax
+										td.right
+											p (417) 276-0000
+									tr
+										td.contact-item-icon
+											i.fa.fa-clock-o
+										td.contact-item
+											p Hours of Operation
+										td.right
+											p 8AM - 5PM CST
+									tr
+										td.contact-item-icon
+											i.fa.fa-fax
+										td.contact-item
+											p Address
+										td.right
+											p 18500 E 800 Humansville
+												br
+												| MO 65674
+		#map-container
+			.container
+				.row
+					.col-md-6.col-md-offset-3
+						#map.material-shadow
+							h3.text-center How To Find Us
+							a(href="#map-modal" data-toggle='modal', data-target='#map-modal')
+								img(src="images/contact-map.png")
+
+		#map-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='map-modal')
+			.modal-dialog(role='document')
+				.modal-content
+					.modal-header
+						button.close(type='button', data-dismiss='modal', aria-label='Close')
+							span(aria-hidden='true') ×
+					.modal-body
+						.g-map
+							iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6307.45990074161!2d-93.7361065!3d37.7729298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c5cfd4f7cf0b07%3A0xa484bad6f35747e0!2sBountiful+Enterprises!5e0!3m2!1sen!2sus!4v1498339724963" frameborder="0" style="border:0" allowfullscreen)
+					.modal-footer
+						button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+		
+		include _partials/_footer.pug
+		include _partials/_scripts.pug

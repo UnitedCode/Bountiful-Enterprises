@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+
+	body
+		include _partials/_navbar.pug
+
+		#content
+			.container
+				.panel.panel-primary.panel-admin#manage-years
+					.panel-heading
+						h3.text-center Manage Years
+					.panel-body
+						.text-center.new-btn
+							a.btn.btn-success(href="new-year.html") + New Year
+						table#years-table
+							thead
+								tr
+									td Year
+									td Total Weight(tons)
+									td Image
+									td
+							tbody
+								tr 
+									td 2017
+									td 1000
+									td job.jpg
+									td
+										a.btn.btn-default(href="edit-year.html") Edit Image
+								tr 
+									td 2016
+									td 1000
+									td job.jpg
+									td
+										a.btn.btn-default(href="edit-year.html") Edit Image
+								tr 
+									td 2015
+									td 1000
+									td job.jpg
+									td
+										a.btn.btn-default(href="edit-year.html") Edit Image
+								tr 
+									td 2014
+									td 1000
+									td job.jpg
+									td
+										a.btn.btn-default(href="edit-year.html") Edit Image
+		include _partials/_scripts.pug

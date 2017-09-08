@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bountiful Enterprises</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/admin.css" rel="stylesheet">
+    <link href="../DataTables/datatables.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-left hidden-xs"><a class="navbar-brand" href="../index.html"><img class="img-responsive" src="../images/footer-logo.png"></a>
+      <ul class="nav navbar-nav">   
+        <li><a href="projects.html"><i class="fa fa-folder-open fa-2x"></i>
+            <p>Manage Projects</p></a></li>
+        <li><a href="new-project.html"><i class="fa fa-plus-square-o fa-2x"></i>
+            <p>New Project</p></a></li>
+        <li><a href="years.html"><i class="fa fa-calendar fa-2x"></i>
+            <p>Manage Years</p></a></li>
+        <li><a href="new-year.html"><i class="fa fa-plus-square-o fa-2x"></i>
+            <p>Add Year</p></a></li>
+        <li><a href="../index.html"><i class="fa fa-external-link fa-2x"></i>
+            <p>Logout</p></a></li>
+      </ul>
+    </nav>
+    <nav class="navbar navbar-default visible-xs">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#mobile-nav" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="../index.html"><img class="img-responsive" src="../images/navbar-logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="mobile-nav">
+        <ul class="nav navbar-nav">
+          <li><a href="projects.html"><i class="fa fa-folder-open fa-lg"></i>Manage Projects</a></li>
+          <li><a href="new-project.html"><i class="fa fa-plus-square-o fa-lg"></i>New Project</a></li>
+          <li><a href="years.html"><i class="fa fa-calendar fa-lg"></i>Manage Years</a></li>
+          <li><a href="new-year.html"><i class="fa fa-plus-square-o fa-lg"></i>New Year</a></li>
+          <li><a href="../index.html"><i class="fa fa-external-link fa-lg"></i>Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="content">
+      <div class="container">
+        <div class="panel panel-primary panel-admin" id="manage-years">
+          <div class="panel-heading">
+            <h3 class="text-center">Manage Years</h3>
+          </div>
+          <div class="panel-body">
+            <div class="text-center new-btn"><a class="btn btn-success" href="new-year.html">+ New Year</a></div>
+            <table id="years-table">
+              <thead>
+                <tr>
+                  <td>Year</td>
+                  <td>Total Weight(tons)</td>
+                  <td>Image</td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr> 
+                  <td>2017</td>
+                  <td>1000</td>
+                  <td>job.jpg</td>
+                  <td><a class="btn btn-default" href="edit-year.html">Edit Image</a></td>
+                </tr>
+                <tr> 
+                  <td>2016</td>
+                  <td>1000</td>
+                  <td>job.jpg</td>
+                  <td><a class="btn btn-default" href="edit-year.html">Edit Image</a></td>
+                </tr>
+                <tr> 
+                  <td>2015</td>
+                  <td>1000</td>
+                  <td>job.jpg</td>
+                  <td><a class="btn btn-default" href="edit-year.html">Edit Image</a></td>
+                </tr>
+                <tr> 
+                  <td>2014</td>
+                  <td>1000</td>
+                  <td>job.jpg</td>
+                  <td><a class="btn btn-default" href="edit-year.html">Edit Image</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../DataTables/datatables.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

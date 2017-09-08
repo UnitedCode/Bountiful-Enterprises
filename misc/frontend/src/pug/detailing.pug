@@ -1,0 +1,40 @@
+doctype html
+html(lang='en')
+
+	include _partials/_head.pug
+
+	body
+		include _partials/_mixins.pug
+
+		+navbar("Detailing")
+
+		#detailing-header
+			.container
+				h1.text-center Detailing
+				.row
+					.col-xs-12.col-md-8.col-md-offset-2
+						#tekla-model
+							.sketchfab-embed-wrapper
+								iframe(src='https://sketchfab.com/models/23a47f594c30418b87454d2080140f8c/embed', frameborder='0', allowvr='', allowfullscreen='', mozallowfullscreen='true', webkitallowfullscreen='true', onmousewheel='')
+		.container#detailing-panels
+			.row
+				.col-md-6
+					.panel.panel-default
+						.panel-heading.text-center Tekla Software
+						.panel-body
+							p.
+								We utilize Tekla as our 3D detailing software.
+								Tekla is a leader in Structural Steel Detailing.
+								With Tekla's free BIM viewer, 
+								it makes it an excellent source for project review and also a great aid in the construction of the building.
+				.col-md-6
+					.panel.panel-default
+						.panel-heading.text-center Detailing
+						.panel-body
+							p.
+								Our detailing abilities consist of 3D detailing, complete with drawings, Connection design and Engineering. 
+								We have a team of in-house Detailers that utilize multi-user models allowing us to have multiple men working on a single project thus improving drawing submittal time. 
+								Our detailing staff is led by over 20 years of experience in structural steel detailing. 
+
+		include _partials/_footer.pug
+		include _partials/_scripts.pug

@@ -1,0 +1,25 @@
+// include these styles inside of a selector or they 
+// will globally override the styles of normal dropdowns
+.dropdown-menu {
+  background-color: $primary-color;
+  > li > a {
+    color: #FFF;
+  }
+}
+
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    color: #FFF;
+    background-color: $secondary-color;
+  }
+}
+
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    color: #FFF;
+    background-color: $secondary-color;
+  }
+}
