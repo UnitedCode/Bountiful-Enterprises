@@ -36,7 +36,7 @@ Route::prefix('admin')->group(function () {
        Route::post('projects/create', 'Admin\ProjectsController@store')->name('store-project');
        Route::get('projects/edit/{project}', 'Admin\ProjectsController@edit')->name('edit-project');
        Route::post('projects/edit/{project}', 'Admin\ProjectsController@update')->name('update-project');
-       Route::post('projects/delete/{project}', 'Admin\ProjectsController@delete')->name('delete-project');
+       Route::post('projects/delete/{project}', 'Admin\ProjectsController@destroy')->name('delete-project');
 
        Route::get('years', 'Admin\YearsController@index')->name('admin-years');
        Route::get('years/create', 'Admin\YearsController@create')->name('create-year');

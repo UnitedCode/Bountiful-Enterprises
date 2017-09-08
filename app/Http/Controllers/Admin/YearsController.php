@@ -21,7 +21,7 @@ class YearsController extends Controller
 
     public function store()
     {
-        return redirect("/admin/years");
+        return redirect()->route('admin-years');
     }
 
     public function edit()
@@ -31,6 +31,6 @@ class YearsController extends Controller
 
     public function destroy()
     {
-        return redirect("/admin/years");
+        return redirect()->route('admin-years');
     }
 }

@@ -12,7 +12,7 @@
                         <label for="#year">Year</label><br>
                         <select class="form-control" id="year">
                             @foreach($years as $year)
-                                <option value="{{ $year->year }}">{{ $year->year }}</option>
+                                <option value="{{ $year->id }}">{{ $year->year }}</option>
                             @endforeach
                         </select>
                     </div>

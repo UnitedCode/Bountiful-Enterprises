@@ -26,9 +26,10 @@ class ProjectsController extends Controller
         return redirect()->route('store-project');
     }
 
-    public function edit(Project $project)
+    public function edit(Project $project, Year $years)
     {
-        return view('admin.projects.edit', compact('project'));
+        $years = $years->all();
+        return view('admin.projects.edit', compact('project', 'years'));
     }
 
     public function destroy()
