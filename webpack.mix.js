@@ -11,7 +11,22 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
+mix.webpackConfig({
+        resolve: {
+            extensions: ['.ts']
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.tsx?$/,
+                    loader: 'ts-loader'
+                    // Excludes for this loader are in the tsconfig.json file
+                }
+            ]
+        }
+    })
+    .js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/admin.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
     .options({
         processCssUrls: false
