@@ -15,7 +15,7 @@ class PagesController extends Controller
 
     public function projects(Year $years) {
 
-        $years = $years->all();
+        $years = $years->all()->sortByDesc('year');
         return view('projects', compact('years'));
     }
 

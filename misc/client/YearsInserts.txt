@@ -1,6 +1,6 @@
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2009,'http://bountifulenterprises.com/images/oreillys_b2f9602d943940789d7816b1f56182d0.jpg',1019.5,NOW(),NOW());
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2010,'http://bountifulenterprises.com/images/oreillys_b2f9602d943940789d7816b1f56182d0.jpg',1163.1,NOW(),NOW());
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2011,'http://bountifulenterprises.com/images/oreillys_b2f9602d943940789d7816b1f56182d0.jpg',2184.1,NOW(),NOW());
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2012,NULL,1935,NOW(),NOW());
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2013,NULL,2303.1,NOW(),NOW());
-INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2014,NULL,100.5,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2009,'test.jpg',1019.5,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2010,'test.jpg',1163.1,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2011,'test.jpg',2184.1,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2012,'test.jpg',1935,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2013,'test.jpg',2303.1,NOW(),NOW());
+INSERT INTO years(year,image,weight,created_at,updated_at) VALUES (2014,'test.jpg',100.5,NOW(),NOW());
