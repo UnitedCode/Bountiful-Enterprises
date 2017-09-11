@@ -28,7 +28,7 @@
                             <div class="info-card-hidden text-center">
                                 <h3>
                                     View current and past <br>projects</h3>
-                                <div class="read-more text-center"><a class="btn btn-primary" href="projects.html">Projects<i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                                <div class="read-more text-center"><a class="btn btn-primary" href="{{ route('projects') }}">Projects<i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="info-card-hidden">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-                                <div class="read-more text-center"><a class="btn btn-primary" href="about.html">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+                                <div class="read-more text-center"><a class="btn btn-primary" href="{{ route('about') }}">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
                             </div>
                         </div>
                     </div>
