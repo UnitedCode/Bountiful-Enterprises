@@ -1,3 +1,9 @@
+try {
+    window.$ = window.jQuery = require('jquery');
+
+    require('bootstrap-sass');
+} catch (e) {}
+
 import {YearFileUpload} from './admin/YearFileUpload.ts';
 
 const url = window.location.href;

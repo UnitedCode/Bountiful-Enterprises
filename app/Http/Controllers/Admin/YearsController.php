@@ -14,9 +14,13 @@ class YearsController extends Controller
         return view('admin.years.index', compact('years'));
     }
 
-    public function create()
+    public function create(Year $years)
     {
-        return view('admin.years.create');
+        // Grab the latest year from the db
+        $year = $years->latest()->limit(1)->get()[0];
+        // Convert from string to int and add 1
+        $year = (int)$year->year + 1;
+        return view('admin.years.create', compact('year'));
     }
 
     public function store()

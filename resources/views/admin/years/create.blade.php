@@ -6,16 +6,24 @@
             <h3 class="text-center">Add Year</h3>
         </div>
         <div class="panel-body">
-            <h4>Choose an image to summarize the year</h4>
             <form method="POST" action="{{ route('create-year') }}">
                 {{ csrf_field() }}
                 <input id="file-input" type="file" style="display:none;">
                 <div class="row">
-                    <div class="col-md-4"><a class="btn btn-default" href="#" id="file-upload-btn">Choose a file...</a></div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                        <label>Image Selector</label>
+                        <a class="btn btn-default" href="#" id="file-upload-btn">Choose a file...</a>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="file-upload-text">Image Name</label>
                         <input class="form-control" id="file-upload-text" type="text">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
+                        <label for="year-text">Year</label>
+                        <input type="text" name="year" id="year-text" value="{{ $year }}">
+                    </div>
+                    <div class="col-md-3">
+                        <label>&nbsp;</label>
                         <input class="btn btn-default" type="submit" value="Add year">
                     </div>
                 </div>
