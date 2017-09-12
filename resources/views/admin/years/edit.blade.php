@@ -6,9 +6,9 @@
             <h3 class="text-center">Edit Year</h3>
         </div>
         <div class="panel-body">
-            <form method="POST" action="{{ route('edit-year', ['year' => $year->id]) }}">
+            <form method="POST" action="{{ route('update-year', ['year' => $year->id]) }}" enctype="multipart/form-data">
                 {{ csrf_field() }}
-                <input id="file-input" type="file" style="display:none;">
+                <input id="file-input" type="file" style="display:none;" name="file">
                 <div class="row">
                     <div class="col-md-3">
                         <label>Image Selector</label>
@@ -16,11 +16,11 @@
                     </div>
                     <div class="col-md-3">
                         <label for="file-upload-text">Image Name</label>
-                        <input class="form-control" id="file-upload-text" type="text" value="{{ $year->image }}">
+                        <input class="form-control" id="file-upload-text" type="text" value="{{ $year->image }}" name="image">
                     </div>
                     <div class="col-md-3">
                         <label for="year-text">Year</label>
-                        <input type="text" name="year" id="year-text" value="{{ $year->year }}">
+                        <input class="form-control" type="text" name="year" id="year-text" value="{{ $year->year }}">
                     </div>
                     <div class="col-md-3">
                         <label>&nbsp;</label>

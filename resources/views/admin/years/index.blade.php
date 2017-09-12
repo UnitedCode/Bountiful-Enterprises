@@ -6,7 +6,7 @@
             <h3 class="text-center">Manage Years</h3>
         </div>
         <div class="panel-body">
-            <div class="text-center new-btn"><a class="btn btn-success" href="new-year.html">+ New Year</a></div>
+            <div class="text-center new-btn"><a class="btn btn-success" href="{{ route('create-year') }}">+ New Year</a></div>
             <table id="years-table">
                 <thead>
                 <tr>

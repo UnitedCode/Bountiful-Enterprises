@@ -20,12 +20,16 @@ export class YearFileUpload
             e.preventDefault();
             this.fileInput.click();
         });
-        $on(this.fileUploadBtn, 'click', () => {this.fileInput.click()});
+        $on(this.fileUploadBtn, 'click', (e) => {
+            e.preventDefault();
+            this.fileInput.click();
+        });
         $on(this.fileInput, 'change', this.updateText.bind(this));
     }
 
     private updateText()
     {
+        console.log(this.fileInput.value);
         this.fileUploadText.value = this.extractFilename(this.fileInput.value);
     }
 
