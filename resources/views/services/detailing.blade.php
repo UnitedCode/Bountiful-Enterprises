@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-offset-2">
                     <div id="tekla-model">
-                        <div class="sketchfab-embed-wrapper">
-                            <iframe src="https://sketchfab.com/models/23a47f594c30418b87454d2080140f8c/embed" frameborder="0" allowvr="" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+                        <div class="sketchfab-embed-wrapper"w>
                             <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=999595b4-cada-4e72-8cf5-0088715b6c30&width=580&height=326" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
                         </div>
                     </div>
