@@ -1,7 +1,7 @@
 @extends("admin.layouts.master")
 
 @section("content")
-    <div class="accordian-table">
+    <div class="accordion-table">
         @foreach($years as $year)
             <div class="tab">
                 <input id="tab-{{ $year->id }}" type="checkbox" name="tabs">

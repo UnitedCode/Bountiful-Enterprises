@@ -23,7 +23,7 @@ body, html {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.accordian-table {
+.accordion-table {
 	margin: 20px 0;
 	.tab {
 		position: relative;
@@ -94,16 +94,16 @@ body, html {
 			background: #FFF;
 		}
 
-		> input[type=checkbox]:checked + > label:before {
+		> input[type=checkbox]:checked + label:before {
 			transform: rotate(90deg);
 		}
 
-		> input[type=checkbox]:checked + > label:after {
+		> input[type=checkbox]:checked + label:after {
 			transform: rotate(180deg);
 		}
 
-		> input[type=checkbox] + > label.link:after,
-		> input[type=checkbox] + > label.link:before {
+		> input[type=checkbox] + label.link:after,
+		> input[type=checkbox] + label.link:before {
 			display: none;
 		}
 	}
