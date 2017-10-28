@@ -11,13 +11,12 @@
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
-    "jquery": "^3.1.1",
-    "laravel-mix": "^1.0",
-    "ts-loader": "^2.3.7",
-    "typescript": "^2.5.2"
-  },
-  "dependencies": {
     "datatables.net": "^1.10.16",
-    "datatables.net-bs": "^1.10.16"
+    "datatables.net-bs": "^1.10.16",
+    "jquery": "^3.1.1",
+    "laravel-mix": "^1.5.1",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.2",
+    "font-awesome": "^4.7.0"
   }
 }

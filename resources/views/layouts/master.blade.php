@@ -4,7 +4,7 @@
     <title>Bountiful Enterprises</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
 <body>
@@ -94,6 +94,8 @@
         </div>
     </div>
 </footer>
-<script src="/js/app.js"></script>
+<script src="{{ mix('/js/manifest.js') }}"></script>
+<script src="{{ mix('/js/vendor.js') }}"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>

@@ -11,27 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.webpackConfig({
-        resolve: {
-            extensions: ['.ts']
-        },
-        module: {
-            rules: [
-                {
-                    test: /\.tsx?$/,
-                    loader: 'ts-loader'
-                    // Excludes for this loader are in the tsconfig.json file
-                }
-            ]
-        }
+mix
+    .ts('resources/assets/ts/app.ts', 'public/js')
+    .ts('resources/assets/ts/admin.ts', 'public/js')
+    .extract(['jquery', 'bootstrap-sass'])
+    .autoload({
+        jquery: ['$', 'jQuery', 'window.jQuery']
     })
-    .js('resources/assets/js/app.js', 'public/js')
-    .js('resources/assets/js/admin.js', 'public/js')
     .sass('resources/assets/sass/app.scss', 'public/css')
-    .options({
-        processCssUrls: false
-    })
     .sass('resources/assets/sass/admin.scss', 'public/css')
-    .options({
-        processCssUrls: false
-    });
+    .version()
+    .sourceMaps()

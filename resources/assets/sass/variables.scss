@@ -1,0 +1,15 @@
+$primary-color: #1F3A93;
+$secondary-color: #38539B;
+$background-color: #E1E1E1;
+$roboto: 'Roboto', sans-serif;
+
+
+$navbar-default-color:             #FFF !default;
+$navbar-default-bg:                $primary-color  !default;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-color:        #FFF !default;
+$navbar-default-link-hover-color:  #FFF !default;
+$navbar-default-link-hover-bg:     $secondary-color !default;
+$navbar-default-link-active-color: #FFF !default;
+$navbar-default-link-active-bg:    $secondary-color !default;
+
